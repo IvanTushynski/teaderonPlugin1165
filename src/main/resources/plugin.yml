@@ -8,7 +8,7 @@ commands:
     description: Teaderon Lottery
     aliases:
       - teaderonlottery
-  chestopenfreavell:
-    description: Random open chest
+  chestfreavell:
+    description: Random Open Chest
     aliases:
       - chestopenfreavell
