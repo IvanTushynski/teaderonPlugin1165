@@ -1,0 +1,14 @@
+name: teaderonPlugin1165
+version: '${project.version}'
+main: com.teaderonplugin1165.TeaderonPlugin1165
+api-version: 1.16
+
+commands:
+  lottery:
+    description: Teaderon Lottery
+    aliases:
+      - teaderonlottery
+  chestopenfreavell:
+    description: Random open chest
+    aliases:
+      - chestopenfreavell
