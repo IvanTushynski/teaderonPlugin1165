@@ -49,29 +49,29 @@ public class ChestOpenLinhir implements CommandExecutor {
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "20 Окуней!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 121 && check <= 140) {
-                this.executeCommand4(player, true, "mi give CONSUMABLE MELON_SLICE1 %player% 10");
+                this.executeCommand4(player, true, "mi give CONSUMABLE PUMPKIN_SLICE1 %player% 10");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
-                player.sendTitle(ChatColor.GOLD + "10 Кусков Арбуза!", ChatColor.RED + "Поздравляем", 2, 30, 2);
+                player.sendTitle(ChatColor.GOLD + "10 Кусков Тыквы!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 141 && check <= 160) {
-                this.executeCommand4(player, true, "mi give CONSUMABLE MELON_SLICE1 %player% 20");
+                this.executeCommand4(player, true, "mi give CONSUMABLE PUMPKIN_SLICE1 %player% 20");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
-                player.sendTitle(ChatColor.GOLD + "20 Кусков Арбуза!", ChatColor.RED + "Поздравляем", 2, 30, 2);
+                player.sendTitle(ChatColor.GOLD + "20 Кусков Тыквы!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 161 && check <= 180) {
-                this.executeCommand4(player, true, "mi give MATERIAL ORE5 %player% 20");
+                this.executeCommand4(player, true, "mi give MATERIAL ORE4 %player% 20");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
-                player.sendTitle(ChatColor.GOLD + "20 Кусков Золотой Руды!", ChatColor.RED + "Поздравляем", 2, 30, 2);
+                player.sendTitle(ChatColor.GOLD + "20 Кусков Кровавой Руды!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 181 && check <= 200) {
-                this.executeCommand4(player, true, "mi give MATERIAL ORE5 %player% 30");
+                this.executeCommand4(player, true, "mi give MATERIAL ORE4 %player% 30");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
-                player.sendTitle(ChatColor.GOLD + "30 Кусков Золотой Руды!", ChatColor.RED + "Поздравляем", 2, 30, 2);
+                player.sendTitle(ChatColor.GOLD + "30 Кусков Кровавой Руды!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 201 && check <= 220) {
-                this.executeCommand4(player, true, "mi give MATERIAL LOG3 %player% 20");
+                this.executeCommand4(player, true, "mi give MATERIAL LOG2 %player% 20");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
-                player.sendTitle(ChatColor.GOLD + "20 Брёвен Тропического Дерева!", ChatColor.RED + "Поздравляем", 2, 30, 2);
+                player.sendTitle(ChatColor.GOLD + "20 Еловых Брёвен!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 221 && check <= 240) {
-                this.executeCommand4(player, true, "mi give MATERIAL LOG3 %player% 30");
+                this.executeCommand4(player, true, "mi give MATERIAL LOG2 %player% 30");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
-                player.sendTitle(ChatColor.GOLD + "30 Брёвен Тропического Дерева!", ChatColor.RED + "Поздравляем", 2, 30, 2);
+                player.sendTitle(ChatColor.GOLD + "30 Еловых Брёвен!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             }
         }
         return false;
