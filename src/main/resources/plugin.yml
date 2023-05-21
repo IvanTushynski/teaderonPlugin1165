@@ -16,3 +16,11 @@ commands:
     description: Random Open Chest
     aliases:
       - chestopenromenna
+  chestlinhir:
+    description: Random Open Chest
+    aliases:
+      - chestopenlinhir
+  chesttrakling:
+    description: Random Open Chest
+    aliases:
+      - chestopentrakling

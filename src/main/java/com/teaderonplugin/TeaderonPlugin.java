@@ -16,6 +16,8 @@ public final class TeaderonPlugin extends JavaPlugin {
         this.getCommand("teaderonlottery").setExecutor(new Lottery());
         this.getCommand("chestopenfreavell").setExecutor(new ChestOpenFreavell());
         this.getCommand("chestopenromenna").setExecutor(new ChestOpenRomenna());
+        this.getCommand("chestopenlinhir").setExecutor(new ChestOpenLinhir());
+        this.getCommand("chestopentrakling").setExecutor(new ChestOpenTrakling());
     }
 
     @Override
