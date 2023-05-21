@@ -1,10 +1,9 @@
-package com.teaderonplugin1165;
+package com.teaderonplugin;
 
 import org.bukkit.Bukkit;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class TeaderonPlugin1165 extends JavaPlugin {
+public final class TeaderonPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
@@ -16,6 +15,7 @@ public final class TeaderonPlugin1165 extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new JoinEvent(), this);
         this.getCommand("teaderonlottery").setExecutor(new Lottery());
         this.getCommand("chestopenfreavell").setExecutor(new ChestOpenFreavell());
+        this.getCommand("chestopenromenna").setExecutor(new ChestOpenRomenna());
     }
 
     @Override

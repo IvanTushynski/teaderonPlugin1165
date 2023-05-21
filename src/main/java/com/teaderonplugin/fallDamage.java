@@ -1,4 +1,4 @@
-package com.teaderonplugin1165;
+package com.teaderonplugin;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

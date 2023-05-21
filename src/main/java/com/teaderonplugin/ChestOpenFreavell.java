@@ -1,4 +1,4 @@
-package com.teaderonplugin1165;
+package com.teaderonplugin;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -32,43 +32,43 @@ public class ChestOpenFreavell implements CommandExecutor {
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "30 Бронзовых Монет!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 41 && check <= 60) {
-                this.executeCommand2(player, true, "mi give CONSUMABLE FISH1 %player% 20");
+                this.executeCommand2(player, true, "mi give CONSUMABLE FISH1 %player% 10");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "10 Окуней!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 61 && check <= 80) {
-                this.executeCommand2(player, true, "mi give CONSUMABLE MEET3 %player% 20");
+                this.executeCommand2(player, true, "mi give CONSUMABLE MEET3 %player% 16");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "16 Кусков сырого мяса!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 81 && check <= 100) {
-                this.executeCommand2(player, true, "mi give CONSUMABLE MEET3 %player% 30");
+                this.executeCommand2(player, true, "mi give CONSUMABLE MEET3 %player% 24");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "24 Кусков сырого мяса!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 101 && check <= 120) {
-                this.executeCommand2(player, true, "mi give CONSUMABLE FISH1 %player% 30");
+                this.executeCommand2(player, true, "mi give CONSUMABLE FISH1 %player% 20");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "20 Окуней!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 121 && check <= 140) {
-                this.executeCommand2(player, true, "mi give CONSUMABLE HONEY1 %player% 20");
+                this.executeCommand2(player, true, "mi give CONSUMABLE HONEY1 %player% 10");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "10 Медовых Сот!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 141 && check <= 160) {
-                this.executeCommand2(player, true, "mi give CONSUMABLE HONEY1 %player% 30");
+                this.executeCommand2(player, true, "mi give CONSUMABLE HONEY1 %player% 20");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "20 Медовых Сот!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 161 && check <= 180) {
-                this.executeCommand2(player, true, "mi give MATERIAL ORE1 %player% 30");
+                this.executeCommand2(player, true, "mi give MATERIAL ORE1 %player% 20");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "20 Кусков Железной Руды!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 181 && check <= 200) {
-                this.executeCommand2(player, true, "mi give MATERIAL ORE1 %player% 50");
+                this.executeCommand2(player, true, "mi give MATERIAL ORE1 %player% 30");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "30 Кусков Железной Руды!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 201 && check <= 220) {
-                this.executeCommand2(player, true, "mi give MATERIAL LOG1 %player% 30");
+                this.executeCommand2(player, true, "mi give MATERIAL LOG1 %player% 20");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "20 Берёзовых Брёвен!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 221 && check <= 240) {
-                this.executeCommand2(player, true, "mi give MATERIAL LOG1 %player% 50");
+                this.executeCommand2(player, true, "mi give MATERIAL LOG1 %player% 30");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "30 Берёзовых Брёвен!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             }

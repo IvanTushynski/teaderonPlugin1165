@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com</groupId>
-    <artifactId>teaderonPlugin1165</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>teaderonPlugin</artifactId>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
-    <name>teaderonPlugin1165</name>
+    <name>teaderonPlugin</name>
 
     <properties>
         <java.version>1.8</java.version>

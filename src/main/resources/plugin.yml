@@ -1,6 +1,6 @@
-name: teaderonPlugin1165
+name: teaderonPlugin
 version: '${project.version}'
-main: com.teaderonplugin1165.TeaderonPlugin1165
+main: com.teaderonplugin.TeaderonPlugin
 api-version: 1.16
 
 commands:
@@ -12,3 +12,7 @@ commands:
     description: Random Open Chest
     aliases:
       - chestopenfreavell
+  chestromenna:
+    description: Random Open Chest
+    aliases:
+      - chestopenromenna
