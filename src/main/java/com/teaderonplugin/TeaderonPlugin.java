@@ -18,6 +18,7 @@ public final class TeaderonPlugin extends JavaPlugin {
         this.getCommand("chestopenromenna").setExecutor(new ChestOpenRomenna());
         this.getCommand("chestopenlinhir").setExecutor(new ChestOpenLinhir());
         this.getCommand("chestopentrakling").setExecutor(new ChestOpenTrakling());
+        this.getCommand("chestopendolamrot").setExecutor(new ChestOpenDolamrot());
     }
 
     @Override

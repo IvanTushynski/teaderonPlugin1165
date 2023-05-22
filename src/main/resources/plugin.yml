@@ -24,3 +24,7 @@ commands:
     description: Random Open Chest
     aliases:
       - chestopentrakling
+  chestdolamrot:
+    description: Random Open Chest
+    aliases:
+      - chestopendolamrot
