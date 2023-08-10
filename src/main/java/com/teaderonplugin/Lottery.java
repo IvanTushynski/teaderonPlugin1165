@@ -28,7 +28,7 @@ public class Lottery implements CommandExecutor {
         if (sender instanceof Player) {
 
             Player player = (Player)sender;
-            int[] exp = new int[200];
+            int[] exp = new int[220];
             int check = (int)Math.floor(Math.random() * (double)exp.length);
             if (check >= 0 && check <= 46) {
                 player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_NO, 1.0F, 1.0F);
@@ -207,6 +207,15 @@ public class Lottery implements CommandExecutor {
                     this.executeCommand(player, true, "mi give MATERIAL CARD1 %player% 1");
                     player.playSound(player.getLocation(), Sound.MUSIC_DRAGON, 1.0F, 1.0F);
                     player.sendTitle(ChatColor.DARK_RED + "!!!Джекпот - Печать Защитника!!!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
+                    firework = (Firework)player.getPlayer().getWorld().spawn(player.getPlayer().getLocation(), Firework.class);
+                    data = firework.getFireworkMeta();
+                    data.addEffects(new FireworkEffect[]{FireworkEffect.builder().withColor(Color.RED).withColor(Color.ORANGE).with(Type.BURST).withFlicker().build()});
+                    data.setPower(0);
+                    firework.setFireworkMeta(data);
+                } else if (check >= 201 && check <= 220) {
+                    this.executeCommand(player, true, "mi give CONSUMABLE FREAVELL_FARM_ON %player% 1");
+                    player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
+                    player.sendTitle(ChatColor.GOLD + "Ваш Выигрыш - Билет в Пещеру ресурсов Фреавелла!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
                     firework = (Firework)player.getPlayer().getWorld().spawn(player.getPlayer().getLocation(), Firework.class);
                     data = firework.getFireworkMeta();
                     data.addEffects(new FireworkEffect[]{FireworkEffect.builder().withColor(Color.RED).withColor(Color.ORANGE).with(Type.BURST).withFlicker().build()});

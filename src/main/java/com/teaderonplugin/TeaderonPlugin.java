@@ -1,9 +1,12 @@
 package com.teaderonplugin;
 
 import org.bukkit.Bukkit;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class TeaderonPlugin extends JavaPlugin {
+public final class TeaderonPlugin extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
@@ -12,7 +15,7 @@ public final class TeaderonPlugin extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new fallDamage(), this);
         Bukkit.getPluginManager().registerEvents(new AirLevel(), this);
         Bukkit.getPluginManager().registerEvents(new FoodLevel(), this);
-        Bukkit.getPluginManager().registerEvents(new JoinEvent(), this);
+        getServer().getPluginManager().registerEvents(this, this);
         this.getCommand("teaderonlottery").setExecutor(new Lottery());
         this.getCommand("chestopenfreavell").setExecutor(new ChestOpenFreavell());
         this.getCommand("chestopenromenna").setExecutor(new ChestOpenRomenna());
@@ -24,5 +27,15 @@ public final class TeaderonPlugin extends JavaPlugin {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+    }
+    @EventHandler
+    public void onPlayerJoin(PlayerJoinEvent event) {
+
+        Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "tellraw @p {\"text\":\"⬇ССЫЛКИ⬇\",\"color\":\"white\"}");
+        Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "tellraw @p {\"text\":\"DISCORD\",\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://discord.gg/e7hFthYUjd\"}}");
+        Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "tellraw @p [\"\",{\"text\":\"TIK\",\"color\":\"black\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.tiktok.com/@teaderon.minecraft\"}},{\"text\":\"TOK\",\"color\":\"red\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.tiktok.com/@teaderon.minecraft\"}}]");
+        Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "tellraw @p {\"text\":\"YOUTUBE\",\"color\":\"dark_red\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.youtube.com/channel/UC2ZgZVuvdZO-uJ85EmDRc_w\"}}");
+        Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "tellraw @p {\"text\":\"⬆ССЫЛКИ⬆\",\"color\":\"white\"}");
+
     }
 }
