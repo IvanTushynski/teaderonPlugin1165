@@ -30,7 +30,7 @@ public final class TeaderonPlugin extends JavaPlugin implements Listener {
     }
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
-
+        Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "tellraw @p {\"text\":\"\\u0422\\u0415\\u0410\\u0414\\u0415\\u0420\\u041e\\u041d\",\"color\":\"dark_red\"}");
         Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "tellraw @p {\"text\":\"⬇ССЫЛКИ⬇\",\"color\":\"white\"}");
         Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "tellraw @p {\"text\":\"DISCORD\",\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://discord.gg/e7hFthYUjd\"}}");
         Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "tellraw @p [\"\",{\"text\":\"TIK\",\"color\":\"black\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.tiktok.com/@teaderon.minecraft\"}},{\"text\":\"TOK\",\"color\":\"red\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.tiktok.com/@teaderon.minecraft\"}}]");
