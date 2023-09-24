@@ -34,9 +34,9 @@ public class ChestOpenTrakling implements CommandExecutor {
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "30 Бронзовых Монет!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 41 && check <= 60) {
-                this.executeCommand4(player, true, "mi give CONSUMABLE FISH1 %player% 10");
+                this.executeCommand4(player, true, "mi give CONSUMABLE FISH3 %player% 10");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
-                player.sendTitle(ChatColor.GOLD + "10 Окуней!", ChatColor.RED + "Поздравляем", 2, 30, 2);
+                player.sendTitle(ChatColor.GOLD + "Треска 10 Штук!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 61 && check <= 80) {
                 this.executeCommand4(player, true, "mi give CONSUMABLE MEET3 %player% 16");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
@@ -46,9 +46,9 @@ public class ChestOpenTrakling implements CommandExecutor {
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "24 Кусков сырого мяса!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 101 && check <= 120) {
-                this.executeCommand4(player, true, "mi give CONSUMABLE FISH1 %player% 20");
+                this.executeCommand4(player, true, "mi give CONSUMABLE FISH3 %player% 20");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
-                player.sendTitle(ChatColor.GOLD + "20 Окуней!", ChatColor.RED + "Поздравляем", 2, 30, 2);
+                player.sendTitle(ChatColor.GOLD + "Треска 20 Штук!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             } else if (check >= 121 && check <= 140) {
                 this.executeCommand4(player, true, "mi give CONSUMABLE WHEET1 %player% 10");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
