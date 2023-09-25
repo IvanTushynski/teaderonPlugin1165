@@ -21,7 +21,7 @@ public class ChestOpenRomenna implements CommandExecutor {
         if (sender instanceof Player) {
 
             Player player = (Player)sender;
-            int[] exp = new int[240];
+            int[] exp = new int[260];
             int check = (int)Math.floor(Math.random() * (double)exp.length);
             if (check >= 0 && check <= 20){
                 this.executeCommand3(player, true, "mi give MISCELLANEOUS SILVER_COIN %player% 1");
@@ -71,6 +71,15 @@ public class ChestOpenRomenna implements CommandExecutor {
                 this.executeCommand3(player, true, "mi give MATERIAL LOG3 %player% 30");
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
                 player.sendTitle(ChatColor.GOLD + "30 Брёвен Тропического Дерева!", ChatColor.RED + "Поздравляем", 2, 30, 2);
+            }//new!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            else if (check >= 221 && check <= 240) {
+                this.executeCommand3(player, true, "mi give MATERIAL LEATHER1 %player% 20");
+                player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
+                player.sendTitle(ChatColor.GOLD + "Шкура 20 штук!", ChatColor.RED + "Поздравляем", 2, 30, 2);
+            } else if (check >= 241 && check <= 260) {
+                this.executeCommand3(player, true, "mi give MATERIAL LEATHER1 %player% 30");
+                player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 1.0F);
+                player.sendTitle(ChatColor.GOLD + "Шкура 30 штук!", ChatColor.RED + "Поздравляем", 2, 30, 2);
             }
         }
         return false;
